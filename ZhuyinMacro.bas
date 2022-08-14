@@ -9,8 +9,8 @@ Dim pythonExe, pythonScript As String
 
 'For consideration: A menu to set these?
 '!-Change these strings to match your install dir------------------------------------!
-pythonExe = """C:\Users\JustinGo\Documents\Python\chinese-helper\Scripts\python.exe"""
-guoyinPy = """C:\Users\JustinGo\Documents\Python\chinese-helper\guoyin.py"""
+pythonExe = """C:\Python\chinese-helper\Scripts\python.exe"""
+guoyinPy = """C:\Python\chinese-helper\guoyin.py"""
 '!-----------------------------------------------------------------------------------!
 
 documentPath = """" & ActiveDocument.FullName & """"
