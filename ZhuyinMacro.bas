@@ -1,4 +1,4 @@
-Attribute VB_Name = "NewMacros"
+Attribute VB_Name = "ZhuyinMacro"
 Sub GuoyinPlease()
 '
 ' GuoyinPlease Macro
@@ -7,7 +7,8 @@ Sub GuoyinPlease()
 
 Dim pythonExe, pythonScript As String
 
-'!-----------Hans, my friend, change these strings to match your install dir---------!
+'For consideration: A menu to set these?
+'!-Change these strings to match your install dir------------------------------------!
 pythonExe = """C:\Users\JustinGo\Documents\Python\chinese-helper\Scripts\python.exe"""
 guoyinPy = """C:\Users\JustinGo\Documents\Python\chinese-helper\guoyin.py"""
 '!-----------------------------------------------------------------------------------!
