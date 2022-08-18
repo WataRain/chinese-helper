@@ -7,9 +7,9 @@ text = ""
 document_path = argv[-1]
 document = Document(document_path)
 
-text = "".join([para.text+'p' for para in document.paragraphs]) # p = paragraph end
+text = "".join([para.text+'p' for para in document.paragraphs]) # p: paragraph end
 
-ignore_chars = string.printable + " ，、…。！？：；‘’“”（）《》【】“”！"
+ignore_chars = string.printable + " ，、…。！？：；‘’“”（）《》【】“”"
 escape_sequences = ["\n", "\t", "\r", "\b", "\f", "\v", "\0"]
 zhuyin = ""
 for char in text:

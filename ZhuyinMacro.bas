@@ -1,7 +1,7 @@
-Attribute VB_Name = "ZhuyinMacro"
-Sub GuoyinPlease()
+Attribute VB_Name = "ZhuyinInsert"
+Sub ZhuyinInsert()
 '
-' GuoyinPlease Macro
+' ZhuyinInsert Macro: add zhuyin to all Chinese chars in document
 '
 '
 
@@ -9,8 +9,8 @@ Dim pythonExe, pythonScript As String
 
 'For consideration: A menu to set these?
 '!-Change these strings to match your install dir------------------------------------!
-pythonExe = """C:\Python\chinese-helper\Scripts\python.exe"""
-guoyinPy = """C:\Python\chinese-helper\guoyin.py"""
+pythonExe = """...\chinese-helper\Scripts\python.exe"""
+guoyinPy = """...\chinese-helper\guoyin.py"""
 '!-----------------------------------------------------------------------------------!
 
 documentPath = """" & ActiveDocument.FullName & """"
@@ -23,14 +23,6 @@ Dim objShell As Object
     
 Debug.Print (shellCommand)
     Set objShellExec = objShell.Exec(shellCommand)
-
-'shellRuntime = 0
-'While objShellExec.Status = 0
-'    shellRuntime = shellRuntime + 1
-'    If shellRuntime Mod 100 = 0 Then
-'        DoEvents
-'    End If
-'Wend
 
 ' Apply Zhuyin as phonetic guide
 Dim currentRange As Range
